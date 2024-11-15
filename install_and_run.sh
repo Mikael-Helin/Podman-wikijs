@@ -3,7 +3,7 @@
 mkdir DATA
 chmod 777 DATA
 
-podman run -d -p 8080:3000 --name amoracle-wiki \
+podman run -d -p 8334:3000 --name amoracle-wiki \
     --restart unless-stopped \
     -e "DB_TYPE=sqlite" \
     -e "DB_FILEPATH=/opt/wiki.db" \
